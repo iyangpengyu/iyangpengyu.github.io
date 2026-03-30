@@ -194,7 +194,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2026/03/27/%E4%BD%BF%E7%94%A8Superpowers%E6%8F%92%E4%BB%B6%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91%E9%97%A8%E6%A7%9B/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2026/03/27/%E4%BD%BF%E7%94%A8Superpowers%E6%8F%92%E4%BB%B6%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91%E9%97%A8%E6%A7%9B/%E4%BD%BF%E7%94%A8Superpowers%E6%8F%92%E4%BB%B6%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91%E9%97%A8%E6%A7%9B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -208,7 +208,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2026/03/27/%E4%BD%BF%E7%94%A8Superpowers%E6%8F%92%E4%BB%B6%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91%E9%97%A8%E6%A7%9B/" class="post-title-link" itemprop="url">使用Superpowers插件简化开发门槛</a>
+            <a href="/2026/03/27/%E4%BD%BF%E7%94%A8Superpowers%E6%8F%92%E4%BB%B6%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91%E9%97%A8%E6%A7%9B/%E4%BD%BF%E7%94%A8Superpowers%E6%8F%92%E4%BB%B6%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91%E9%97%A8%E6%A7%9B/" class="post-title-link" itemprop="url">使用Superpowers插件简化开发门槛</a>
         </h2>
 
         <div class="post-meta">
@@ -225,7 +225,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-03-30 16:36:27" itemprop="dateModified" datetime="2026-03-30T16:36:27+08:00">2026-03-30</time>
+                <time title="修改时间：2026-03-30 17:21:39" itemprop="dateModified" datetime="2026-03-30T17:21:39+08:00">2026-03-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -248,7 +248,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="什么是Superpowers？"><a href="#什么是Superpowers？" class="headerlink" title="什么是Superpowers？"></a>什么是Superpowers？</h2><p>Superpowers 为 AI 编程智能体（如 Claude Code、Cursor、Codex、OpenCode）提供了一套完整的软件开发工作流程。它不是单一技能，而是由 20+ 个可组合 Skills 组成的系统化工作流，覆盖需求梳理、架构设计、测试驱动开发、代码审查和分支管理等开发环节。它的核心思路，是通过一组可组合的 Skills 和初始指令，让 AI 智能体在编写代码时自动遵循最佳实践，而不是随意生成代码。<br>上面的定义，有点抽象，一句话概括就是，帮你快速生成一个应用的skills，里面内置了软件开发的规约，确保生成的工程能够满足你的需求，并且易读易修改。</p>
+          <h2 id="什么是Superpowers？"><a href="#什么是Superpowers？" class="headerlink" title="什么是Superpowers？"></a>什么是Superpowers？</h2><p>Superpowers 为 AI 编程智能体（如 Claude Code、Cursor、Codex、OpenCode）提供了一套完整的软件开发工作流程。它不是单一技能，而是由 20+ 个可组合 Skills 组成的系统化工作流，覆盖需求梳理、架构设计、测试驱动开发、代码审查和分支管理等开发环节。它的核心思路，是通过一组可组合的 Skills 和初始指令，让 AI 智能体在编写代码时自动遵循最佳实践，而不是随意生成代码。<br>上面的定义，有点抽象，一句话概括就是，帮你快速生成一个应用的skills，里面内置了软件开发的规约，确保生成的工程能够满足你的需求，并且易读易修改。核心流程是：规划 → 拆解 → 执行 → 审查 → 复盘。<br>关键 Skills 解析</p>
+<ol>
+<li><p>Brainstorming（头脑风暴） 不是让你回答几个问题就开始干活。它会用「苏格拉底式提问法」一个问题一个问题地拷打你，直到把需求聊透了再开始。</p>
+</li>
+<li><p>Using Git Worktrees（版本隔离） 从主分支拉出新分支，所有开发都在新分支上进行。做完觉得没问题再合并回去，避免直接在主分支上改炸。</p>
+</li>
+<li><p>Writing Plans（任务拆解） 把设计文档拆解成 2-5 分钟就能完成的开发任务清单。目标是「让一个没有品味、没有判断力、没有项目上下文、而且厌恶测试的热情初级工程师也能照着做」。</p>
+</li>
+<li><p>Subagent-Driven Development（多 Agent 协同） 开好几个子 Agent，每个负责一个小任务。做完后过两道审查：第一轮看需求有没有做到，第二轮看代码质量好不好。</p>
+</li>
+<li><p>Requesting Code Review（全局审查） 所有代码从头到尾通看一遍，看模块之间能不能集成、有没有遗漏、整体一不一致。<br><img src="/1f063e28a1a13cd61f2dcc309f76d7f1.png" alt="如图所示"></p>
+</li>
+</ol>
 <h2 id="怎么用Superpowers？"><a href="#怎么用Superpowers？" class="headerlink" title="怎么用Superpowers？"></a>怎么用Superpowers？</h2><h3 id="step1-把插件加入市场"><a href="#step1-把插件加入市场" class="headerlink" title="step1:把插件加入市场"></a>step1:把插件加入市场</h3><p>在 Claude Code 的终端中执行：&#x2F;plugin marketplace add obra&#x2F;superpowers-marketplace</p>
 <h3 id="step2-安装插件"><a href="#step2-安装插件" class="headerlink" title="step2:安装插件"></a>step2:安装插件</h3><p>&#x2F;plugin install superpowers@superpowers-marketplace 安装完成后，重启 Claude Code，就可以使用了。</p>
 <h3 id="step3-用-superpowers-brainstorm-直接开聊"><a href="#step3-用-superpowers-brainstorm-直接开聊" class="headerlink" title="step3:用&#x2F;superpowers:brainstorm 直接开聊"></a>step3:用&#x2F;superpowers:brainstorm 直接开聊</h3><p>网上流传的经典案例是：&#x2F;superpowers:brainstorm 我想开发一个简单的网页端 Todo 管理应用。<br>然后进行需求澄清，通过连续提问收集必要信息，包括采用什么技术栈、数据结构、数据持久化情况、UI展示、功能选择，均可以自定义，聊清楚了之后，会生成执行计划，待确认，最终确认后，可以生成你想要的应用。<br>最关键的点是，这些技能在内网环境下，也能用，只要你有类似Claude Code的开发工具，例如阿里灵犀，直接导入技能包，就能实现相同效果。<br>笔者是在内网环境验证的，所以就不po图了。</p>
@@ -271,7 +283,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2026/03/20/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%EF%BC%88%E9%80%9A%E8%BF%87claude%E4%B8%8A%E6%89%8Bagentscope%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2026/03/20/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%EF%BC%88%E9%80%9A%E8%BF%87claude%E4%B8%8A%E6%89%8Bagentscope%EF%BC%89/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%EF%BC%88%E9%80%9A%E8%BF%87claude%E4%B8%8A%E6%89%8Bagentscope%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -285,7 +297,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2026/03/20/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%EF%BC%88%E9%80%9A%E8%BF%87claude%E4%B8%8A%E6%89%8Bagentscope%EF%BC%89/" class="post-title-link" itemprop="url">手把手教你学习智能体开发（通过claude上手agentscope）</a>
+            <a href="/2026/03/20/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%EF%BC%88%E9%80%9A%E8%BF%87claude%E4%B8%8A%E6%89%8Bagentscope%EF%BC%89/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%EF%BC%88%E9%80%9A%E8%BF%87claude%E4%B8%8A%E6%89%8Bagentscope%EF%BC%89/" class="post-title-link" itemprop="url">手把手教你学习智能体开发（通过claude上手agentscope）</a>
         </h2>
 
         <div class="post-meta">
@@ -366,7 +378,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/19/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/19/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -380,7 +392,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/02/19/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/" class="post-title-link" itemprop="url">mysql常用命令</a>
+            <a href="/2019/02/19/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/" class="post-title-link" itemprop="url">mysql常用命令</a>
         </h2>
 
         <div class="post-meta">
@@ -423,7 +435,7 @@
           <p>mysql作为开发常用数据库，提供了高性能的持久化服务，很多中小企业采用该数据库进行数据存储。作为开发者，在自己的linux服务器上搭建自己的mysql数据库，并修改端口，密码配置，并进行常用的增删改查操作显得尤为重要。下面是详细内容：</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/02/19/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/#more" rel="contents">
+              <a class="btn" href="/2019/02/19/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9B/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -447,7 +459,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/13/%E5%A6%82%E4%BD%95%E5%9C%A8notepad++%E4%B8%AD%E6%94%AF%E6%8C%81markdown%E8%AF%AD%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/13/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E5%9C%A8notepad++%E4%B8%AD%E6%94%AF%E6%8C%81markdown%E8%AF%AD%E6%B3%95/%E5%A6%82%E4%BD%95%E5%9C%A8notepad++%E4%B8%AD%E6%94%AF%E6%8C%81markdown%E8%AF%AD%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -461,7 +473,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/02/13/%E5%A6%82%E4%BD%95%E5%9C%A8notepad++%E4%B8%AD%E6%94%AF%E6%8C%81markdown%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">如何在notepad++中支持markdown语法</a>
+            <a href="/2019/02/13/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E5%9C%A8notepad++%E4%B8%AD%E6%94%AF%E6%8C%81markdown%E8%AF%AD%E6%B3%95/%E5%A6%82%E4%BD%95%E5%9C%A8notepad++%E4%B8%AD%E6%94%AF%E6%8C%81markdown%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">如何在notepad++中支持markdown语法</a>
         </h2>
 
         <div class="post-meta">
@@ -478,7 +490,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-03-30 16:36:15" itemprop="dateModified" datetime="2026-03-30T16:36:15+08:00">2026-03-30</time>
+                <time title="修改时间：2026-03-30 17:21:52" itemprop="dateModified" datetime="2026-03-30T17:21:52+08:00">2026-03-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -501,7 +513,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>在Markdown开发人员的GitHub上直接下载该插件，将下载的MarkdownViewerPlusPlus.dll文件放入Notepad++的Plugins文件夹下，该工具会在Notepad++下添加一个小的Markdown图标，点击即可运行该插件。<br><img src="/.com//Notepad+MarkdownInfo.png" alt="如图所示"><br>MarkdownViewer++下载链接：<a href="https://github.com/nea/MarkdownViewerPlusPlus">https://github.com/nea/MarkdownViewerPlusPlus</a></p>
+          <p>在Markdown开发人员的GitHub上直接下载该插件，将下载的MarkdownViewerPlusPlus.dll文件放入Notepad++的Plugins文件夹下，该工具会在Notepad++下添加一个小的Markdown图标，点击即可运行该插件。<br><img src="/Notepad+MarkdownInfo.png" alt="如图所示"><br>MarkdownViewer++下载链接：<a href="https://github.com/nea/MarkdownViewerPlusPlus">https://github.com/nea/MarkdownViewerPlusPlus</a></p>
 
       
     </div>
@@ -521,7 +533,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/13/idea%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/13/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/idea%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -535,7 +547,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/02/13/idea%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">idea开发工具简介及问题汇总</a>
+            <a href="/2019/02/13/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/idea%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">idea开发工具简介及问题汇总</a>
         </h2>
 
         <div class="post-meta">
@@ -596,7 +608,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/31/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/31/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -610,7 +622,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/01/31/hello-world/" class="post-title-link" itemprop="url">利用github+Hexo所搭建的个人博客</a>
+            <a href="/2019/01/31/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/hello-world/" class="post-title-link" itemprop="url">利用github+Hexo所搭建的个人博客</a>
         </h2>
 
         <div class="post-meta">
@@ -653,7 +665,7 @@
           <p>目前利用github提供的gitPage服务并结合hexo框架进行个人博客搭建已经成为主流博客搭建技术，如果你也想采用这种技术搭建属于自己的blog空间，那么这篇文章会对你进行部署和搭建产生一定的帮助。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/01/31/hello-world/#more" rel="contents">
+              <a class="btn" href="/2019/01/31/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0/hello-world/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
